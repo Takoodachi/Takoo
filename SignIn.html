@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký</title>
+    <link rel="stylesheet" href="SignIn.css">
+    <link rel="icon" type="image" href="icon.png">
+</head>
+<body>
+
+    <div class="main_block">
+        <form name="myForm" action="index.html">
+            <h1>Sign In</h1>
+            <fieldset>
+            <legend>
+                <h3>Enter your account information</h3>
+            </legend>
+                <div class="account-details">
+                    <div><label>Email*</label><input id="email" type="text" required></div>
+                    <div><label>Password*</label><input id="pass" type="password" required></div>
+                </div>
+            </fieldset>
+            <br>
+            <a href="SignUp.html"><p><i>Don't have an account? Click here to Sign Up!</i></p></a>
+            <br>
+            <button type="submit" onclick="validateForm()">Sign In</button>
+        </form>
+    </div>
+
+    <script src="SignIn.js"></script>
+
+</body>
+</html>

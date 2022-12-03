@@ -1,0 +1,396 @@
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+
+html {
+    box-sizing: border-box;
+}
+*,*:before,*:after
+    {
+    box-sizing: inherit;
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+body {
+    margin: 0;
+}
+
+footer, header, main, menu, nav, section {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active, a:hover {
+    outline-width: 0;
+}
+
+button, input, select {
+    font: inherit;
+    margin: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+/* End extract */
+
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.wide {
+    letter-spacing: 4px
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: inherit;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.display-container {
+    position: relative;
+}
+
+.input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-hover:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-hover:first-child {
+    background-color:#ccc;color:#000;
+}
+
+.dropdown-hover:hover > .button:first-child {
+    background-color:#ccc;color:#000;
+}
+
+.dropdown-content {
+    cursor: auto;
+    color:#000;
+    background-color:#fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.bar-block .dropdown-hover, .bar-block .dropdown-click {
+    width: 100%;
+}
+
+.bar-block .dropdown-hover .dropdown-content, .bar-block .dropdown-click .dropdown-content {
+    min-width: 100%;
+}
+
+.bar-block .dropdown-hover .button, .bar-block .dropdown-click .button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+}
+
+.main, #main {
+    transition: margin-left .4s;
+}
+
+.bar {
+    width: 100%;
+    overflow: hidden;
+}
+
+.center .bar {
+    display: inline-block;
+    width: auto;
+}
+
+.bar .bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+.bar .dropdown-hover {
+    position: static;
+    float: left;
+}
+
+.bar .button {
+    white-space: normal;
+}
+
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+
+.bar-block.center .bar-item {
+    text-align: center;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.container:after, .container:before, .row:after, .row:before, .row-padding:after, .row-padding:before, .bar:before, .bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col, .half {
+    float: left;
+    width: 100%;
+}
+
+.col.m6, .half {
+    width: 49.99999%;
+}
+
+.content, .auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    max-width: 980px;
+}
+
+.auto {
+    max-width: 1140px;
+}
+
+.hide-small {
+    display: none!important;
+}
+
+.top, .bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.top {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.display-bottommiddle {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+}
+
+.display-container:hover .display-hover {
+    display: block;
+}
+
+.display-container:hover span.display-hover {
+    display: inline-block;
+}
+
+.display-hover {
+    display: none;
+}
+
+.display-position {
+    position: absolute;
+}
+
+.row-padding, .row-padding>.half, .row-padding>.col {
+    padding: 0 8px;
+}
+
+.container, .panel {
+    padding: 0.01em 16px;
+}
+
+.panel {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+
+.card-4, .hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.opacity, .hover-opacity:hover {
+    opacity: 0.60;
+}
+
+.opacity-off, .hover-opacity-off:hover {
+    opacity: 1;
+}
+
+.large {
+    font-size: 18px!important;
+}
+
+.justify {
+    text-align: justify!important;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.border {
+    border: 1px solid #ccc!important;
+}
+
+.section {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+}
+
+.margin-bottom {
+    margin-bottom: 16px!important;
+}
+
+.padding-large {
+    padding: 12px 24px!important;
+}
+
+.padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+
+.padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+}
+
+.left {
+    float: left!important;
+}
+
+.right {
+    float: right!important;
+}
+
+.button:hover {
+    color:#000!important;
+    background-color:#ccc!important;
+}
+
+.transparent, .hover-none:hover {
+    background-color: transparent!important;
+}
+
+.hover-none:hover {
+    box-shadow: none!important;
+}
+
+/* Color */
+
+.black, .hover-black:hover {
+    color:#fff!important;
+    background-color:#000!important;
+}
+
+.text-white, .hover-text-white:hover {
+    color:#fff!important;
+}

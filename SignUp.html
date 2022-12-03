@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="icon" type="image" href="icon.png">
+</head>
+<body>
+
+    <div class="main_block">
+        <form name="myForm" action="index.html">
+            <h1>Sign Up</h1>
+            <fieldset>
+            <legend>
+                <h3>Account Information</h3>
+            </legend>
+                <div class="account-details">
+                    <div><label>Email*</label><input id="email" type="text" required></div>
+                    <div><label>Password*</label><input id="pass" type="password" required></div>
+                    <div><label>Re-enter your email*</label><input id="re-email" type="text" required></div>
+                    <div><label>Re-enter your password*</label><input id="re-pass" type="password" required></div>
+                </div>
+            </fieldset>
+            <fieldset>
+            <legend>
+                <h3>Personal Information</h3>
+            </legend>
+                <div class="personal-details">
+                    <div><label>Full Name*</label><input id="name" type="text" ></div>
+                    <div><label>Age*</label><input id="age" type="text" ></div>
+                    <div><label>Phone Number*</label><input id="number" type="text" ></div>
+                </div>
+                <br>
+                <div>
+                    <label>Gender*</label>  
+                    <select required>
+                        <option value=""></option>
+                        <option value="Nam">Male</option>
+                        <option value="Nữ">Female</option>
+                        <option value="Khác">Other</option>
+                    </select>
+                </div>
+                <br>
+                <a href="SignIn.html"><p><i>Already have an account? Click here to Sign In!</i></p></a>
+                <br>
+            </fieldset>
+        <button type="submit" onclick="validateForm()">Submit</button>
+        </form>
+    </div>
+
+    <script src="SignUp.js"></script>
+
+</body>
+</html>
